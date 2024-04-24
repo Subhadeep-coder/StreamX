@@ -65,6 +65,7 @@ export async function POST(req: Request) {
                 }
             }
         });
+        // console.log('[USER_CREATED]');
     }
     if (eventType === 'user.updated') {
         const currentUser = await db.user.findUnique({
